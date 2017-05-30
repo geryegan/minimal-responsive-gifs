@@ -23,6 +23,7 @@ class App extends Component {
 
   //search for gifs using giphy api
   submit(){
+    this.setState({ gifs: [] })
     axios.get('http://api.giphy.com/v1/gifs/search?q=' + this.state.searchValue + '&api_key=dc6zaTOxFJmzC')
       .then(
         (data) => {
@@ -97,8 +98,8 @@ class App extends Component {
             <CSSTransitionGroup
               transitionName='fade'
               component='div'
-              transitionEnterTimeout='750'
-              transitionLeaveTimeout='750'
+              transitionEnterTimeout='1000'
+              transitionLeaveTimeout='500'
             >
               {this.gifRender()}
             </CSSTransitionGroup>
