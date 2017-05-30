@@ -1,6 +1,6 @@
 # Minimal Responsive GIF Search Gallery
 
-Simple minimal responsive GIF search gallery using 
+Simple minimal responsive GIF search gallery using GIPHY API.  Buttons submit search query and clear the gifs from the screen, respectively.
 
 ## To get started
 ```sh
