@@ -6,10 +6,6 @@
 body {
   background-color: #222;
 }
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
 
 .App-header {
   justify-content: center;
@@ -18,8 +14,8 @@ body {
   color: white;
 }
 
+/* gallery styling */
 .images {
-  /* Prevent vertical gaps */
   line-height: 0;
   -webkit-column-count: 5;
   -webkit-column-gap: 0px;
@@ -34,11 +30,7 @@ body {
   height: auto !important;
 }
 
-
-.App-intro {
-  font-size: large;
-}
-
+/*Fade in and out animations*/
 .fade-enter {
   opacity: 0;
 }
@@ -48,17 +40,17 @@ body {
   transition: opacity 0.5s ease-in;
 }
 
-/* start leave state */
+
 .fade-leave {
   opacity: 1;
 }
 
-/* end leave state */
 .fade-leave.fade-leave-active {
   opacity: 0;
   transition: opacity 0.5s ease-in;
 }
 
+/*media queries for differing screen size responsivity*/
 @media (max-width: 1200px) {
   .images {
   -moz-column-count:    4;
