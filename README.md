@@ -8,3 +8,4 @@ Simple minimal responsive GIF search gallery using GIPHY API.  Buttons submit se
 npm install
 #Run App
 npm start
+localhost:3000
